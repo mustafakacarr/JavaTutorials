@@ -1,3 +1,7 @@
+/*
+Soru: Sistem tarafından random oluşturulan sayıyı kullanıcının tahmin etmesini ve tahmin ile sayının büyüklük/küçüklük karşılaştırmasını yaparak kullanıcıya çıktı verecek
+programın kodunu yazınız. Ek olarak kullanıcının doğru sayıya kaç adımda ulaştığını belirtiniz.
+ */
 import java.util.Scanner;
 
 public class SayiTahminOyunu {

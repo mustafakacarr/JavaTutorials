@@ -33,11 +33,10 @@ public class TCKimlikGecerlilikKontrolu {
                 Character.getNumericValue(tcKimlik.charAt(5))+Character.getNumericValue(tcKimlik.charAt(7));
         int onuncuHance=(tekHaneler*7-ciftHaneler)%10;
         int kontrol=(tekHaneler+ciftHaneler+onuncuHance)%10;
-        String sonIkiHane= Integer.toString(onuncuHance)+Integer.toString(kontrol);
-        if(sonIkiHane!=tcKimlik.substring(9)){
-            return sonIkiHane + "\n"+tcKimlik.substring(9);
+        if(onuncuHance==Character.getNumericValue(tcKimlik.charAt(9)) && kontrol==Character.getNumericValue(tcKimlik.charAt(10))){
+            return "TC Kimlik numarası geçerlidir.";
         }else{
-            return "TC kimlik numarası geçerlidir.";
+            return "TC kimlik numarası geçersizdir.";
         }
     }
 
